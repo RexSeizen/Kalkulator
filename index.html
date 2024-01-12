@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script src="main.js"></script>
+    <style>
+        .custom-Button {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="viewInput">
+    <table border=0 cellspacing="0" cellpadding="7">
+        <div>
+            <tr>
+                <td>
+                    <button class="custom-Button" value="C" onclick="c()">C</button> 
+                </td>
+                <td>
+                    <button class="custom-Button" value="<" onclick="del()">del</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="*" onclick="insert('*')">x</button>                 
+                </td>
+                <td>
+                    <button class="custom-Button" value="/" onclick="insert('/')">/</button>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td>
+                    <button class="custom-Button" value="1" onclick="insert(1)">1</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="2" onclick="insert(2)">2</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="3" onclick="insert(3)">3</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="-" onclick="insert('-')">-</button>
+                </td>
+            </tr>
+        </div>
+        
+        <div>
+            <tr>
+                <td>
+                    <button class="custom-Button" value="4" onclick="insert(4)">4</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="5" onclick="insert(5)">5</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="6" onclick="insert(6)">6</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="+" onclick="insert('+')">+</button>
+                </td>
+            </tr>
+        </div>
+
+        <div>
+            <tr>
+                <td>
+                    <button class="custom-Button" value="7" onclick="insert(7)">7</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="8" onclick="insert(8)">8</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="9" onclick="insert(9)">9</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="=" onclick="hasil()">=</button>
+                </td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td>
+                    <button class="custom-Button" value="00" onclick="insert('00')">00</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="0" onclick="insert(0)">0</button>
+                </td>
+                <td>
+                    <button class="custom-Button" value="." onclick="insert('.')">.</button>
+                </td>
+            </tr>
+        </div>
+    </table>
+</body>
+</html>
